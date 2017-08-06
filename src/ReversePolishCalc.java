@@ -17,13 +17,13 @@ public class ReversePolishCalc {
                 double firstOp = pop();
                 double secondOp = pop();
                 if (token.equals("+")) {
-                    push(firstOp + secondOp);
+                    push(secondOp + firstOp);
                 } else if (token.equals("-")) {
-                    push(firstOp - secondOp);
+                    push(secondOp - firstOp);
                 } else if (token.equals("*")) {
-                    push(firstOp * secondOp);
+                    push(secondOp * firstOp);
                 } else if (token.equals("/")) {
-                    push(firstOp / secondOp);
+                    push(secondOp / firstOp);
                 }
             } else {
                 push(token);
